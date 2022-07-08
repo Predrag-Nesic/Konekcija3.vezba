@@ -10,6 +10,9 @@ public class Konekcija3 {
         // m.ubaciKorisnika("Robert", "Langdon");
         // m.ubaciKorisnika("Mary", "London");
         
+        Korisnik k = new Korisnik("Pera", "Peric");
+        m.upisiKorisnika(k);
+        
         m.ubaciKorisnike();
         
         m.ispisiTabelu();
