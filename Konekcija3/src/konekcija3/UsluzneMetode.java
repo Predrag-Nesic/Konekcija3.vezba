@@ -27,6 +27,11 @@ public class UsluzneMetode {
                 + " values (null, '" + ime + "', '" + prezime + "')");
     }
     
+    public void upisiKorisnika(Korisnik k) throws SQLException {
+        st.executeUpdate("insert into korisnici3(korisnik_id, ime, prezime)"
+                + " values (null, '" + k.getIme() + "', '" + k.getPrezime() + "')");
+    }
+    
     public void ubaciKorisnike() throws SQLException {
         rs = st.executeQuery("select * from korisnici3");
         while(rs.next()) {
